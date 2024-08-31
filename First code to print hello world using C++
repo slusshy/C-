@@ -1,0 +1,16 @@
+METHOD 1.
+# include <iostream>   /This is called header file/
+int main()             /This line starts the main function in which our execuatable program is present/
+{
+	std::cout << "hello world";  /std::cout is used to print the output/
+	return 0;
+}
+
+METHOD 2. / In this case we have used namespace so that we do not have to write std:: we can just write cout to print the output/
+# include <iostream> 
+using namespace std
+int main()          
+{
+	cout << "hello world";
+	return 0;
+}
