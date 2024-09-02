@@ -1,0 +1,24 @@
+METHOD 1.
+# include <iostream>
+using namespace std;
+int main ()
+{
+string str;
+cout<<"May i knoiw your name";
+cin>>str;                         /cin>> is used to input a desired output similar to scanf in c language/
+cout<<"Welcome "<<str;            /cin>> cannot print space i.e if my name is "john celester" then it will only print john/
+return 0;
+}
+
+METHOD 2.
+# include <iostream>
+# include <string>                 /This header file is used to include the function getline/
+using namespace std;
+int main ();
+{
+string str;
+cout<<"May i knoiw your name";
+getline(cin,str);                  /getline is used to print the whole name i.e if my name "karl jacob" then it will print "karl jacob"/                 
+cout<<"Welcome "<<str;
+return 0;
+}
