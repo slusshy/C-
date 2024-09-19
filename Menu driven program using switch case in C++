@@ -1,0 +1,39 @@
+# include <iostream>
+using namespace std;
+int main()
+{
+	int add, sub, mul, quo, rem, n1, n2, choice;
+	cout << "Press 1 for addition"<<endl;
+	cout << "Press 2 for subtraction" << endl;
+	cout << "Press 3 for multiplication" << endl;
+	cout << "Press 4 for quotient" << endl;
+	cout << "Press 5 for remainder" << endl;
+	cin >> choice;
+	cout << "Enter first value" << endl;
+	cin >> n1;
+	cout << "Enter second value" << endl;
+	cin >> n2;
+	switch (choice)
+	{
+	case 1: add = n1 + n2;
+		cout << "Addition is" <<endl<< add;
+		break;
+	case 2: sub = n1 - n2;
+		cout << "Subtraction is" << endl << sub;
+		break;
+	case 3: mul = n1 * n2;
+		cout << "Multiplication is" << endl << mul;
+		break;
+	case 4: quo = n1 / n2;
+		cout << "Quotient is" << endl << quo;
+		break;
+	case 5: rem = n1 % n2;
+		cout << "Remainder is" << endl << rem;
+		break;
+	default:
+		cout << "INVALID CHOICE";
+		break;
+	}
+
+	return 0;
+}
